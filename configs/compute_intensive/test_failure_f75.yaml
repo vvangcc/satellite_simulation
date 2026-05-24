@@ -1,0 +1,68 @@
+general:
+  phase: "test"
+  random_seed: 42
+  epsilon_start: 0.5
+  epsilon_decay: 0.999
+  epsilon_min: 0.001
+  begin_time: "2023-10-01 00:00:00"
+  time_stride: 1
+  rounds: 1
+  skip_time: !!python/tuple [60, 0]
+  duration: 600
+  reward_factors: !!python/tuple [1, 0.05, 1, 0.1, 0.2]
+  print_cycle: 10
+  select_mode: 3
+
+agent:
+  mode: "DGR_D3QN"
+  action_dim: 5
+  hidden_dim: 256
+  dgr_hidden_dim: 64
+  gnn_layers: 2
+  top_k: 2
+  lambda_mix: 0.6
+  replay_buffer_size: 200000
+  batch_size: 256
+  gamma: 0.99
+  activation: "LeakyRelu"
+  negative_slope: 0.01
+  hidden_layers: 2
+  learning_rate: 0.0002
+  repeat: 1
+  target_update_steps: 500
+  model_path: "./model_weights/compute_intensive/train_dgr_d3qn.pth"
+
+environment:
+  task_profile: "compute_intensive"
+  mission_possibility: [1.0, 0.0]
+  poisson_rate: 40
+  packet_frequency: 1
+  computing_demand_factor: [1400, 2200]
+  computing_demand_factor_2: [1400, 2200]
+  size_after_computing_factor: [1.3, 4.0]
+  size_after_computing_1: 10240
+  task_num_stages: [2, 3, 4]
+  size_reduction_factor: [1.3, 4.0]
+  final_result_size_range: [5120, 15360]
+  mean_interval_time: 40
+  memory: !!python/float 2.68435456e9
+  computing_ability: !!python/float 80e9
+  transmission_rate: !!python/float 1.2e9
+  downlink_rate: !!python/float 3e9
+  downstream_delays: 0.0016667
+  packet_size_range: [!!python/float 26214400, !!python/float 78643200]
+  state_update_period: 0.1
+  heartbeat_timeout: 0.25
+  visualize: false
+  print_info: false
+  del_cycle: 30
+  save_log: false
+  show_detail: false
+  random_edges_del: 75
+  random_nodes_del: 0
+  elevation_angle: 45
+  update_cycle: 10
+  pole: false
+  tle_filepath: "./Satellite_Data/60Degree_500_12x24_tles.txt"
+  SOD_file_path: "./Ground_Data/11_ground_stations.txt"
+  save_training_data: "compute_intensive/test_failure_f75.txt"

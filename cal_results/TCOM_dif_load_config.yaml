@@ -1,0 +1,17 @@
+folders:
+#  - path: './training_process_data/TCOM_version/dif_load/Ground'
+#    name: 'Ground'
+  - path: './training_process_data/TCOM_version/dif_load/Tradition'
+    name: 'ICS'
+  - path: './training_process_data/TCOM_version/dif_load/PureDQN'
+    name: 'DDQN'
+  - path: './training_process_data/TCOM_version/dif_load/PurePPO'
+    name: 'PPO'
+  - path: 'training_process_data/TCOM_version/dif_load/PureDuelingDQN__'
+    name: 'D3DQN'
+  - path: './training_process_data/TCOM_version/dif_load/NewDQN'
+    name: 'G-D3QN'
+#  - path: './training_process_data/TCOM_version/dif_load/NewPPO'
+#    name: 'G-PPO'
+
+save_plots: true

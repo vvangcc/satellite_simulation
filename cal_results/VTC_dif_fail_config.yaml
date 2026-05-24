@@ -1,0 +1,10 @@
+folders:
+  - path: './training_process_data/VTC_version/dif_failure/PPO'
+    name: 'PPO'
+  - path: './training_process_data/VTC_version/dif_failure/DDQN_ds'
+    name: 'Dueling-DDQN'
+  - path: './training_process_data/VTC_version/dif_failure/DDQN_ds_m3'
+    name: 'Dueling-DDQN+'
+  - path: './training_process_data/VTC_version/dif_failure/Tradition'
+    name: 'ICS'
+save_plots: false

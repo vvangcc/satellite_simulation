@@ -1,0 +1,13 @@
+files:
+  - path: './training_process_data/TCOM_version/dif_load/Tradition/test_Tradition_020.txt'
+    name: 'ICS'
+  - path: './training_process_data/TCOM_version/dif_load/PureDQN/test_PureDDQN_020.txt'
+    name: 'DDQN'
+  - path: './training_process_data/TCOM_version/dif_load/PureDuelingDQN__/test_PureDDQN_dueling_020.txt'
+    name: 'D3QN'
+  - path: './training_process_data/TCOM_version/dif_load/NewPPO/test_NewPPO_shuffle_020.txt'
+    name: 'PPO'
+  - path: './training_process_data/TCOM_version/dif_load/NewDQN/test_NewDDQN_dueling_shuffle_020.txt'
+    name: 'G-D3QN'
+
+save_plots: true

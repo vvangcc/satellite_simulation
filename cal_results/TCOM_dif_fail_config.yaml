@@ -1,0 +1,15 @@
+folders:
+
+  - path: './training_process_data/TCOM_version/dif_fail/Tradition'
+    name: 'ICS'
+  - path: './training_process_data/TCOM_version/dif_fail/PureDQN'
+    name: 'DDQN'
+  - path: './training_process_data/TCOM_version/dif_fail/PurePPO'
+    name: 'PPO'
+  - path: 'training_process_data/TCOM_version/dif_fail/PureDuelingDQN_'
+    name: 'D3DQN'
+  - path: './training_process_data/TCOM_version/dif_fail/NewDQN'
+    name: 'G-D3QN'
+#  - path: './training_process_data/TCOM_version/dif_fail/NewPPO'
+#    name: 'G-PPO'
+save_plots: true
